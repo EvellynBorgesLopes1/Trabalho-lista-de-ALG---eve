@@ -6,3 +6,15 @@
 # diretamente na lista salarios aplicando a regra matemática adequada.
 # Saída: Percorra as listas atualizadas e imprima um holerite simples no formato: "Nome:
 # X - Novo Salário: R$ Y"
+
+funcionarios = ["Ana", "Bruno", "Carlos", "Diana"]
+salarios = [1500.0, 3200.0, 1800.0, 4500.0]
+
+for i in range(4):
+    if salarios[i] <= 2000:
+        salarios[i] = salarios[i] + (salarios[i] * 15 / 100)
+    else:
+        salarios[i] = salarios[i] + (salarios[i] * 10 / 100)
+
+for i in range(4):
+    print("Nome:", funcionarios[i], "- Novo Salário: R$", salarios[i])
