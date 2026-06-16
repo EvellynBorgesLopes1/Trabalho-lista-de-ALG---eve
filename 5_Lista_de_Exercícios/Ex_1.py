@@ -34,5 +34,5 @@ while True:
             print("Saindo...")
             break
         case _:        
-            print("Opção inválida")
+            print("Opção invalida")
     
